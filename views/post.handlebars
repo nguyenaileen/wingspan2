@@ -1,0 +1,32 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wingspan</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta charset="utf-8">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<div class="card mb-3">
+  <img class="card-img-top" src="{{image_url}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{bird_name}}</h5>
+    <p class="card-text">{{description}}</p>
+    <p class="card-text"><small class="text-muted">Seen by {{user.name}} on {{format_date date_created}} in 📍{{location}}</small></p>
+  </div>
+</div>
+
+<Post>
+    <form method="POST" action="/comment">
+        <div class="input-field">
+            <label>Comment:</label>
+            <textarea type="text" name="comment" rows="20" placeholder="Comment on this sighting"></textarea>
+        </div>
+        <input type="hidden" name="article-id" value="{{article.id}}">
+        <button type="submit">Add Comment</button>
+    </form>
+</Post>

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Pigeon",
+    "location": "Oakland, CA",
+    "description": "Cool bird!",
+    "date_created": "03-15-2024",
+    "image_url":"https://res.cloudinary.com/dag7i28e3/image/upload/v1712022941/wingspan/file_t6jzmr.png"
+  },
+  {
+    "name": "Dove",
+    "location": "Piedmont, CA",
+    "description": "A bird!",
+    "date_created": "02-15-2024",
+    "image_url":"https://res.cloudinary.com/dag7i28e3/image/upload/v1712022941/wingspan/file_t6jzmr.png"
+  },
+  {
+    "name": "Seagull",
+    "location": "San Francisco, CA",
+    "description": "Cool bird!",
+    "date_created": "03-15-2024",
+    "image_url":"https://res.cloudinary.com/dag7i28e3/image/upload/v1712022941/wingspan/file_t6jzmr.png"
+  },
+  {
+    "name": "Condor",
+    "location": "Santa Cruz, CA",
+    "description": "Big bird!",
+    "date_created": "01-15-2024",
+    "image_url":"https://res.cloudinary.com/dag7i28e3/image/upload/v1712022941/wingspan/file_t6jzmr.png"
+  },
+  {
+    "name": "Hummingbird",
+    "location": "Vallejo, CA",
+    "description": "Small bird!",
+    "date_created": "03-11-2024",
+    "image_url":"https://res.cloudinary.com/dag7i28e3/image/upload/v1712022941/wingspan/file_t6jzmr.png"
+  },
+  {
+    "name": "Woodpecker",
+    "location": "Oakland, CA",
+    "description": "Loud bird!",
+    "date_created": "03-30-2024",
+    "image_url":"https://res.cloudinary.com/dag7i28e3/image/upload/v1712022941/wingspan/file_t6jzmr.png"
+  }
+  ]

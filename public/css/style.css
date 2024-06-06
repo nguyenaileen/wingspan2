@@ -1,0 +1,24 @@
+header, .project:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+
+.no-button {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  display: block;
+  padding: 0.5rem;
+  color: rgba(255,255,255,.5);
+}
+
+
+.no-button:hover {
+  color: rgba(255,255,255,.75);
+ 
+}
+
+.dollar-amount {
+  color: #056605;
+  font-weight: bold;
+  margin-left: -5px;
+}
