@@ -13,19 +13,27 @@
 
 
 <!-- Loop over each object in the projects array -->
-{{#each posts as |post| }}
+
+<h1 id="header">Birds Spotted</h1>
+
 <div class="row">
-  <div class="col-md-4">
-    <div class="card">
-      <img class="card-img-top" src="{{post.image_url}}" alt="Card image cap" />
+{{#each posts as |post|}}
+  <div class="col-md-4 col-sm-12">
+    <div class="card" id="card-size">
+      <img class="card-img-top" id="image-size" src="{{post.image_url}}" alt="Card image cap" />
       <div class="card-body">
-        <h5 class="card-title">{{post.name}}</h5>
-        <p class="card-text">{{post.description}}</p>
-         <p class="card-text"><small class="text-muted">Seen by {{user.name}} on {{format_date date_created}} in 📍{{post.location}}</small></p>
-         <a href="/posts/{{post.id}}">{{post.name}} class="btn btn-primary" > View post </a>
+        <h5 class="card-title"><a id="card-link" href="/posts/{{post.id}}">{{post.name}}</a></h5>
+        <p class="card-text" id="text-cutoff">{{post.description}}</p>
+         <!-- <a href="/posts/{{post.id}}" > View full post </a>  -->
+      </div>
+      <div class="card-location border">
+        <p class="card-text" id="location"><small class="text-muted">Seen by {{user.name}} on {{format_date date_created}} in 📍{{post.location}}</small></p>
       </div>
     </div>
   </div>
 {{/each}}
+</div>
+
+
 
 

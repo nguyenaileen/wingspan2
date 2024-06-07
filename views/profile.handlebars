@@ -10,23 +10,23 @@
 
     <form class="form new-post-form">
       <div class="form-group">
-        <label for="bird-name">bird name:</label>
+        <label for="bird-name">Bird Name:</label>
         <input class="form-input" type="text" id="bird-name" name="bird-name" />
       </div>
       <div class="form-group">
-        <label for="bird-location">bird location:</label>
+        <label for="bird-location">Bird Location:</label>
         <input class="form-input" type="text" id="bird-location" name="bird-location" />
       </div>
       <div class="form-group">
-        <label for="bird-desc">description:</label>
+        <label for="bird-desc">Description:</label>
         <textarea class="form-input" id="bird-desc" name="bird-desc"></textarea>
       </div>
       <div class="form-group">
         <label for="imageFile" class="form-label">Image upload</label>
         <input class="form-control" type="file" id="imageFile" />
       </div>
-      <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+      <div class="form-group form-button">
+        <button type="submit" class="btn btn-primary">CREATE POST</button>
       </div>
     </form>
   </div>
@@ -35,22 +35,33 @@
   <div class="col-md-6 post-list">
     <h3>Current Posts:</h3>
 
+<div class="row mb-2">
     {{#each posts as |post|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/posts/{{post.id}}">{{post.name}}</a></h4>
-        <h5>{{post.description}}</h5>
-        <h5>{{post.location}}</h5>
-        <img src="{{post.image_url}}" height="175px">
+      <div class="col-md-6">
+        <div class="card"id="profile-card-size">
+      <img class="card-img-top" id="profile-image-size" src="{{post.image_url}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title"><a id="card-link" href="/posts/{{post.id}}">{{post.name}}</a></h5>
+        <p class="card-text">{{post.description}}</p>
+         <!-- <a href="/posts/{{post.id}}" > View full post </a>  -->
       </div>
-      <div class="col-md-4">
+      <div class="card-location border">
+        <p class="card-text" id="location"><small class="text-muted">Seen by {{user.name}} on {{format_date date_created}} in 📍{{post.location}}</small></p>
+         <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
       </div>
+      </div>
+     
     </div>
+      </div>
     {{/each}}
+    </div>
   </div>
   {{/if}}
 </div>
 
+
 <script src="./js/profile.js"></script>
+
+
 

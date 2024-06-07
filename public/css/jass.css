@@ -1019,12 +1019,13 @@ a:hover {
 }
 
 .btn.btn-danger {
-  background-color: #e64c66;
+  background-color: #CC5500;
   color: #ffffff;
+  margin: 0px 10px 10px 0px;
 }
 
 .btn.btn-danger:hover {
-  background-color: #ee8294;
+  background-color: #8a3a01;
 }
 
 .btn.btn-info {

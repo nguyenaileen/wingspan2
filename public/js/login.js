@@ -51,14 +51,3 @@ document
 document
   .querySelector('.signup-form')
   .addEventListener('submit', signupFormHandler);
-
-var sighUpButton = document.getElementById('signup-btn');
-var loginForm = document.getElementById('login-form');
-var signupForm = document.getElementById('signup-form');
-
-function showSignIn() {
-  loginForm.style.display = 'none';
-  signupForm.style.display = 'block';
-}
-
-sighUp.addEventListener('click', showSignIn);
